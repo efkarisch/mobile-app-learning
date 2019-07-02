@@ -20,6 +20,7 @@ export default class HomeScreen extends Component {
   state = {
     item: '',
     items: [],
+    selectedItem: null
   }
 
   itemChangeHandler = val => {
@@ -83,15 +84,20 @@ export default class HomeScreen extends Component {
 
 
           {this.state.items.length > 0 &&
-            <FlatList
-              data={this.state.items}
-              renderItem={({item}) =>
-                  <ItemsListItem
-                    handlePress={this.removeItem}
-                    item={item}
-                    />
-                }
-            />}
+            <>
+              <PlaceDetail
+              />
+              <FlatList
+                data={this.state.items}
+                renderItem={({item}) =>
+                    <ItemsListItem
+                      handlePress={this.removeItem}
+                      item={item}
+                      />
+                  }
+              />
+            </>
+        }
 
         </ScrollView>
         <InfoTabFooter>
