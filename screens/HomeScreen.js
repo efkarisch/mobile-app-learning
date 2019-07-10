@@ -65,7 +65,7 @@ export default class HomeScreen extends Component {
 
       <MainContainer>
 
-      <Heading>A nasty chunk of text</Heading>
+      <Heading>A chunk of text</Heading>
 
       <AddItem
         value={this.state.item}
@@ -147,4 +147,4 @@ ${Platform.select({
 align-items: center;
 background-color: #fbfbfb;
 padding-vertical: 20;
-``
+`
