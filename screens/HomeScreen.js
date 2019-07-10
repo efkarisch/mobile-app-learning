@@ -147,4 +147,4 @@ ${Platform.select({
 align-items: center;
 background-color: #fbfbfb;
 padding-vertical: 20;
-`
+``
